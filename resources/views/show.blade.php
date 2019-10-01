@@ -12,7 +12,7 @@
  <body>
   <div class="container">    
      <br />
-     <h3 align="center">Personal Information Record</h3>
+     <h3 align="center">Personal Information Record Details</h3>
      <br />
      <div class="form-group">
             <label for="firstname">First Name</label>

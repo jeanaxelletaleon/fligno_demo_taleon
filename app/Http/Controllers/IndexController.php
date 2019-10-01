@@ -58,7 +58,7 @@ class IndexController extends Controller
             'firstname' =>  'required',
             'lastname'  =>  'required',
             'birthdate' =>  'required|date_format:Y-m-d', 
-            'phone' =>   'required|digits:11|numeric',
+            'phone' =>   'required|numeric',
             'about' => 'required',
             'address' => 'required',
             'gender' => 'required',
@@ -88,7 +88,7 @@ class IndexController extends Controller
 
         $personal = PersonalInformation::create($form_data);
         $personal->benefits()->sync(request('benefits'));
-        return response()->json(['success' => 'Data Added successfully.']);
+        return response()->json(['success' => 'New record has been successfully added.']);
     }
 
     /**
@@ -139,7 +139,7 @@ class IndexController extends Controller
             'firstname' =>  'required',
             'lastname'  =>  'required',
             'birthdate' =>  'required|date_format:Y-m-d', 
-            'phone' =>   'required|digits:11|numeric',
+            'phone' =>   'required|numeric',
             'about' => 'required',
             'address' => 'required',
             'gender' => 'required',
@@ -170,7 +170,7 @@ class IndexController extends Controller
         PersonalInformation::whereId($request->hidden_id)->update($form_data);
         $personal = PersonalInformation::find($request->hidden_id);
         $personal->benefits()->sync(request('benefits'));
-        return response()->json(['success' => 'Record successfully updated.']);
+        return response()->json(['success' => 'Record has been successfully updated.']);
     }
 
     /**
