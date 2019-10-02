@@ -42,7 +42,7 @@
             <h2>Confirmation</h2>
           </div>
           <div class="modal-body">
-            <h4 align="center" style="margin:0;">Are you sure you want to remove this data?</h4>
+            <h4 align="center" style="margin:0;">Are you sure you want to remove this record?</h4>
           </div>
           <div class="modal-footer">
             <button type="button" name="ok_button" id="ok_button" class="btn btn-danger show-toast">OK</button>
